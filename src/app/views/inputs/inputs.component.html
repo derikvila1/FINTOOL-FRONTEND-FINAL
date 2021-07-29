@@ -1,0 +1,37 @@
+<div class="container">
+    
+    
+    <br>
+
+    
+    <div class="form"> 
+        
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Valor</mat-label>
+            <input matInput placeholder="valor" [(ngModel)] = "request.value" >
+        </mat-form-field>
+        
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Descrição</mat-label>
+            <input matInput placeholder="Descrição" [(ngModel)] = "request.description">
+        </mat-form-field>
+        
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Categoria</mat-label>
+            <select matNativeControl required [(ngModel)] = "request.category">
+                <option value="Recorrente">Recorrente</option>
+                <option value="Não Recorrente">Não Recorrente</option>
+            </select>
+           
+        </mat-form-field>
+        
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Data</mat-label>
+            <input matInput type="date" placeholder="Data" [(ngModel)] = "request.date" >
+        </mat-form-field>
+        <mat-checkbox class="example-full-width" [(ngModel)]="request.output">Saida</mat-checkbox>
+        
+        <button (click)=save() ><mat-icon>add</mat-icon> </button>
+    </div>
+
+</div>

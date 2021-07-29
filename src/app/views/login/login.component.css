@@ -1,0 +1,44 @@
+.loginContainer{
+    background-color:#156;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: solid 2px;
+    border-color: springgreen;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.form {
+
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    min-width: 200px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.button{
+    margin-bottom: 20px;
+    width: 100px;
+    background-color: #155;
+    border: solid 2px;
+    border-color: springgreen;
+    color: white;
+    margin-right: 20px;
+    text-align: center;
+    padding: 0;
+    text-transform: uppercase;
+}
+.divbutton {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+

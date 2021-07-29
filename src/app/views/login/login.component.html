@@ -1,0 +1,112 @@
+<div *ngIf="!cadastrar" class="loginContainer">
+
+    <div  class="form" >
+
+      <mat-form-field >
+        <mat-label style="color: aliceblue;"  >Usuário</mat-label >
+          <input  
+          [(ngModel)] = usuario.email 
+          id="usuario" 
+          matInput 
+          placeholder="Digite seu email" 
+          type="text" 
+            value=""
+            >
+          </mat-form-field >
+          
+          <mat-form-field   >
+            <mat-label style="color: aliceblue;" >Senha</mat-label>
+            <input [(ngModel)] = usuario.password 
+            id="senha" matInput 
+            placeholder="Digite sua senha"
+            type="password" value="">
+          </mat-form-field>
+      </div>
+          
+        <div class="divbutton">
+          
+          <button 
+          class="button"
+          mat-button 
+          type="submit" 
+          name="action" 
+        
+          (click)="fazerLogin()" >
+          Entrar</button>
+
+          <button 
+          class="button"
+          mat-button 
+          type="submit" 
+          name="action" 
+          (click)="toggleCadastrar()"
+          >CADASTRAR
+          </button>
+
+        </div>
+
+</div>
+
+<div *ngIf="cadastrar" class="loginContainer">
+
+        <div class="form" >
+
+          <mat-form-field >
+            <mat-label style="color: aliceblue;"  >Nome</mat-label >
+              <input  
+              [(ngModel)] = cadUsuario.name 
+              id="nome" 
+              matInput 
+              placeholder="Digite seu nome" 
+              type="text" 
+                value=""
+                >
+              </mat-form-field >
+
+          <mat-form-field >
+           <mat-label style="color: aliceblue;"  >E-mail</mat-label >
+              <input  
+              [(ngModel)] = cadUsuario.email 
+              id="email" 
+              matInput 
+              placeholder="Digite seu e-mail" 
+              type="text" 
+                value=""
+                >
+              </mat-form-field >
+              
+              <mat-form-field   >
+                <mat-label style="color: aliceblue;" >Senha</mat-label>
+                <input [(ngModel)] = cadUsuario.password 
+                id="senha" matInput 
+                placeholder="Digite sua senha"
+                type="password" value="">
+              </mat-form-field>
+         
+        
+        </div>     
+
+            <div class="divbutton">
+              
+                          
+              <button 
+              class="button"
+              mat-button 
+              type="submit" 
+              name="action" 
+              (click)="fazerCadastro()"
+              >CADASTRAR
+              </button>
+
+              <button 
+              class="button"
+              mat-button 
+              type="submit" 
+              name="action" 
+              (click)="toggleCadastrar()"
+              >Cancelar
+              </button>
+              
+            </div>
+          </div>
+

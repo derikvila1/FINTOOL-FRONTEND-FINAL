@@ -1,0 +1,24 @@
+.container {
+ background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.sideContent{
+   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.sidenav {
+    background-color: #156;
+    width: 200px;
+    border-right: solid 3px greenyellow;
+}
+.sidenav a {
+    color: #fff;
+}
+
+.sidenav i {
+    padding-right: 10px;
+}
