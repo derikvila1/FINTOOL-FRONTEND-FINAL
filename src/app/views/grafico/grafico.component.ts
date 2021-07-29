@@ -66,7 +66,9 @@ export class GraficoComponent implements OnInit {
             backgroundColor: "#881f36",
             borderColor: "#007ee7",
             //fill: true,
-        }],
+        },
+       
+      ],
           labels: this.meses.map(item=>item.value)
       },
   });

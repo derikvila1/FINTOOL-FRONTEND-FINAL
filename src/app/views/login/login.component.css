@@ -9,6 +9,8 @@
     align-items: center;
     margin-left: 30%;
     margin-top: 10%;
+    margin-bottom: 50px;
+    box-shadow: 6px 6px 6px #111;
 }
 
 .form {
